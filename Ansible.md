@@ -4,8 +4,8 @@
 ### 1.	Centos Control Server
 -	sudo yum install -y epel-release 
 -	yum update -y
--      yum install -y sshd
--      systemctl start sshd
+- yum install -y sshd
+- systemctl start sshd
 -	systemctl status sshd
 -	yum install -y ansible
 -	ansible –version
