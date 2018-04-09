@@ -1,5 +1,20 @@
 # ANSIBLE
 ## TODAY WE ARE WORKING WITH ANSIBLE BY CREATING THREE EC2 SERVERS. ONE FOR CONTROLL SERVER(CENTOS) AND TWO ARE REMOTE SERVERS (UBUNTU, CENTOS)
+## CONFIGURATION SETTINGS ORDER OF OPERATION
+-       $ANSIBLE_CONFIG = Environmental Variable
+-       ./ansible.cfg = PWD
+-       ~/.ansible.cfg = Home Directory
+-       /etc/ansible.cgf = Global Level Inventory File
+
+## ENVIRONMENTAL VARIABLE OVER-RIDES
+-       $ANSIBLE_<ConfigSettings> = Overrides specific settings by prefixing ANSIBLE to the name
+-       #export ANSIBLE_FORKS=10 = Great way to override specific settings on the fly
+ 
+In Present Working Directory add ansible.cfg file
+-       [defaults]
+        inventory=./inventory
+        log_path=./ansible.log
+     
 ### INSTALLATION OF PYHTON.
 ### 1.	Centos Control Server
 -	sudo yum install -y epel-release 
